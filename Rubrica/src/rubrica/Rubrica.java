@@ -1,5 +1,5 @@
 package rubrica;
-//modificato
+
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,6 +16,8 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 
 	Voce v= new Voce(nome, cognome, telefono);
 	rubrica.put(nome + " " + cognome, v);
+
+	System.out.println("Ciao Viviana!");
 	
 	return v;
 }
