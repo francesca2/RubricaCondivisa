@@ -7,6 +7,7 @@ public class Rubrica {
 
 	//Mappa contentente le voci di rubrica
 private Map<String,Voce> rubrica = new TreeMap<String,Voce>();	
+private int a;
 
 public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VoceGi‡Esiste
 {	
@@ -39,10 +40,6 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 					System.out.println("Il tuo telefono Ë" + v.getTelefono());
 				}
 		   }
-		
-
-		
-		
 
 	}
 return v;
