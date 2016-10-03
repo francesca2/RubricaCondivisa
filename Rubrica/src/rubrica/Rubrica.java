@@ -4,9 +4,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Rubrica {
-	
-	// hhhhhhhhhhhhh
 
+	//Mappa contentente le voci di rubrica
 private Map<String,Voce> rubrica = new TreeMap<String,Voce>();	
 
 public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VoceGi‡Esiste
