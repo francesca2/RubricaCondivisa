@@ -19,7 +19,8 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 
 	//ciao Viviana
 	//ciao Fra
-
+//Altro conflitto da gestire!
+	
 return v;
 }
 	//riaggiungo i commenti inutili
