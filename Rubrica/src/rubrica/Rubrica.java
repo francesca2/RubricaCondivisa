@@ -24,9 +24,12 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 		System.out.println("Ciao");
    }
 
-	if(v.getNome()=="Viviana")
-	{
-		System.out.println("Il tuo nome è Viviana");
+	for(Voce v2:rubrica.values()){
+		System.out.println(v2.getCognome());
+		if(v.getNome()=="Viviana")
+		{
+			System.out.println("Il tuo nome è Viviana");
+		}
 	}
 return v;
 }
