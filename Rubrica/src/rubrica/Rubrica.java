@@ -30,11 +30,20 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 		{
 			System.out.println("Il tuo nome è Viviana");
 		}
+
 		for(Voce v3:rubrica.values()){
 			   System.out.println(v3.getTelefono());
 				System.out.println("hello!");
+				if(v.getTelefono().equals("55555"))
+				{
+					System.out.println("Il tuo telefono è" + v.getTelefono());
+				}
 		   }
 		
+
+		
+		
+
 	}
 return v;
 }
