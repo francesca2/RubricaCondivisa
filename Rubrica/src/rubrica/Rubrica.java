@@ -17,9 +17,8 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 	Voce v= new Voce(nome, cognome, telefono);
 	rubrica.put(nome + " " + cognome, v);
 
-	System.out.println("Ciao Viviana!");
+	//ciao Viviana
 	
-	//ciao fra
 	return v;
 }
 	//riaggiungo i commenti inutili
