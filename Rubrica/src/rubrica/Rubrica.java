@@ -10,7 +10,7 @@ private Map<String,Voce> rubrica = new TreeMap<String,Voce>();
 
 public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VoceGi‡Esiste
 {	
-	int i=5;
+
 	if(rubrica.containsKey(nome + " " + cognome)){
 		throw new VoceGi‡Esiste("Voce gi‡ registrata");
 	}
@@ -19,12 +19,15 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 	Voce v= new Voce(nome, cognome, telefono);
 	rubrica.put(nome + " " + cognome, v);
 
-   
 	for(Voce v1:rubrica.values()){
 	   System.out.println(v1.getNome());
 		System.out.println("Ciao");
    }
 
+	if(v.getNome()=="Viviana")
+	{
+		System.out.println("Il tuo nome Ë Viviana");
+	}
 return v;
 }
 
