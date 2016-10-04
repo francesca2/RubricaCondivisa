@@ -33,4 +33,10 @@ public List<Voce> getListaVoci(){
 	
 }
 
+//quarto metodo
+public Voce aggiornaVoce(String nome,Sting cognome,String telefono){
+	
+	
+}
+
 }
