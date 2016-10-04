@@ -33,10 +33,14 @@ public List<Voce> getListaVoci(){
 	
 }
 
-//quarto metodo
+//quarto metodo, deve lanciare una eccezione se nome e cognome non esistono in rubric
 public Voce aggiornaVoce(String nome,Sting cognome,String telefono){
 	
 	
 }
 
+//quinto metodo
+public Voce rimuoviVoce(String nome, String cognome){
+	
+}
 }
