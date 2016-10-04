@@ -1,3 +1,4 @@
+import java.util.List;
 import rubrica.*;
 
 public class MainRubrica {
@@ -11,7 +12,7 @@ try {
 System.out.println(e.getMessage());
 }
 try {
-	rbr.aggiungiVoce("Viviana", "Varcica", "448822299");
+	rbr.aggiungiVoce("Viviana", "Vacirca", "448822299");
 } catch (VoceGi‡Esiste e) {
 	System.out.println(e.getMessage());
 }
@@ -20,9 +21,32 @@ try {
 } catch (VoceGi‡Esiste e) {
 	System.out.println(e.getMessage());
 }
+//prova secondo metodo 
+try {
+	rbr.getVoce("Paki", "Paki");
+} catch (VoceNonEsistente e) {
+	System.out.println(e.getMessage());
+}
+
+try {
+	rbr.getVoce("Paolino", "Paperino");
+} catch (VoceNonEsistente e) {
+	System.out.println(e.getMessage());
+}
+try {
+	rbr.getVoce("Viviana", "Vacirca");
+} catch (VoceNonEsistente e) {
+	System.out.println(e.getMessage());
+}
+
+//prova terzo metodo
 
 
+	List<Voce> VociRubrica=rbr.getListaVoci();
+	for(Voce v:VociRubrica){
 		
+		System.out.println(v.getNome()+" "+v.getCognome()+" "+v.getTelefono());
+	}
 	}
 
 }
