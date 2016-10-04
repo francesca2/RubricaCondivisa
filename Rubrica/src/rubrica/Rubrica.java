@@ -21,7 +21,7 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 return v;
 }
 
-//Secondo metodo, getVoce
+//Secondo metodo getVoce, deve verificare che nome e cognome esistano altrimenti lancia una eccezione 
 
 public Voce getVoce(String nome, String cognome)
 {
