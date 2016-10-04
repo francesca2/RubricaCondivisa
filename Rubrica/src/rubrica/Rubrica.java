@@ -20,4 +20,11 @@ public Voce aggiungiVoce(String nome, String cognome, String telefono) throws Vo
 return v;
 }
 
+//Secondo metoto, getVoce
+
+public Voce getVoce(String nome, String cognome)
+{
+	
+}
+
 }
