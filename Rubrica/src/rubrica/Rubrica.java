@@ -41,7 +41,7 @@ public List<Voce> getListaVoci(){
 }
 
 //quarto metodo, deve lanciare una eccezione se nome e cognome non esistono in rubric
-public Voce aggiornaVoce(String nome,Sting cognome,String telefono) throws VoceNonEsistente{
+public Voce aggiornaVoce(String nome,String cognome,String telefono) throws VoceNonEsistente{
 	
 	if(!rubrica.containsKey(nome + " " + cognome)){
 		throw new VoceNonEsistente("La voce non è registrata in rubrica");
