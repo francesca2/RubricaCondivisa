@@ -26,21 +26,50 @@ return v;
 public Voce getVoce(String nome, String cognome)
 {
 	
-}
+
+
+
+
+
+
+
+
 
 //Terzo metodo getTutteLeVoci, deve restitutire tutte le voci in rubrica
 public List<Voce> getListaVoci(){
 	
 }
 
+
+
+
+
+
+
+
+
 //quarto metodo, deve lanciare una eccezione se nome e cognome non esistono in rubric
-public Voce aggiornaVoce(String nome,Sting cognome,String telefono){
+public Voce aggiornaVoce(String nome,Sting cognome,String telefono) throws VoceNonEsistente{
 	
-	
+	if(!rubrica.containsKey(nome + " " + cognome)){
+		throw new VoceNonEsistente("La voce non è registrata in rubrica");
+	}
+
+	Voce v=rubrica.get(nome + " " + cognome);
+	v.setTelefono(telefono);
+	 return v;
 }
 
 //quinto metodo
-public Voce rimuoviVoce(String nome, String cognome){
+public Voce rimuoviVoce(String nome, String cognome) throws VoceNonEsistente{
+	
+	if(!rubrica.containsKey(nome + " " + cognome)) {
+		throw new VoceNonEsistente("La voce non è registrata in rubrica");
+	}
+	
+	Voce v=rubrica.get(nome + " " + cognome);
+	rubrica.remove(nome + " " + cognome);
+	return v;
 	
 }
 }
