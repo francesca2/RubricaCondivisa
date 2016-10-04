@@ -28,6 +28,9 @@ public Voce getVoce(String nome, String cognome)
 	
 }
 
-
+//Terzo metodo getTutteLeVoci, deve restitutire tutte le voci in rubrica
+public List<Voce> getListaVoci(){
+	
+}
 
 }
