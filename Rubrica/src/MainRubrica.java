@@ -47,7 +47,7 @@ try {
 	}
 
 
-	
+//Prova quarto metodo - aggiorna il numero di telefono di una voce	
 	try {
 		Voce vaggiornata= rbr.aggiornaVoce("Paolino", "Paperino", "112255599");
 		System.out.println("Il nuovo numero di " + vaggiornata.getNome() + " " + vaggiornata.getCognome() + " è: " + vaggiornata.getTelefono());
@@ -61,9 +61,7 @@ try {
 	System.out.println(e.getMessage());
 	}
 
-			
-
-
+//Prova quinto metodo- rimuove un utente dalle voci in rubrica
 	try {
 		Voce vrimossa=rbr.rimuoviVoce("Paolino", "Paperino");
 		System.out.println("Ho rimosso la voce " + vrimossa.getNome() + " " + vrimossa.getCognome() + " " + vrimossa.getTelefono());
